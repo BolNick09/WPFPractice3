@@ -1,0 +1,50 @@
+﻿<Window x:Class="WPFFormResumeMax.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFFormResumeMax"
+        mc:Ignorable="d"
+        Title="Резюме"
+        Width="230"
+        Height="300">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+
+        <Label Grid.Row="0" Grid.Column="0" Content="Имя" Margin="0,0,0,5" />
+        <TextBox Grid.Row="0" Grid.Column="1" x:Name="tbName" Margin="0,0,0,5" />
+
+        <Label Grid.Row="1" Grid.Column="0" Content="Фамилия" Margin="0,0,0,5" />
+        <TextBox Grid.Row="1" Grid.Column="1" x:Name="tbLastName" Margin="0,0,0,5" />
+
+        <Label Grid.Row="2" Grid.Column="0" Content="Отчество" Margin="0,0,0,5" />
+        <TextBox Grid.Row="2" Grid.Column="1" x:Name="tbFatherName" Margin="0,0,0,5" />
+
+        <Label Grid.Row="3" Grid.Column="0" Content="Пол" Margin="0,0,0,5" />
+        <TextBox Grid.Row="3" Grid.Column="1" x:Name="tbSex" Margin="0,0,0,5" />
+
+        <Label Grid.Row="4" Grid.Column="0" Content="Год и дата рождения" Margin="0,0,0,5" />
+        <TextBox Grid.Row="4" Grid.Column="1" x:Name="tbDateOfBirth" Margin="0,0,0,5" />
+
+        <Label Grid.Row="5" Grid.Column="0" Content="Семейный статус" Margin="0,0,0,5" />
+        <TextBox Grid.Row="5" Grid.Column="1" x:Name="tbMaritalStatus" Margin="0,0,0,5" />
+
+        <Label Grid.Row="6" Grid.Column="0" Content="Доп информация" Margin="0,0,0,5" />
+        <TextBox Grid.Row="6" Grid.Column="1" x:Name="tbAddInfo" Margin="0,0,0,5" />
+
+        <Button Grid.Row="7" Grid.Column="1" x:Name="btnSave" Content="Сохранить" HorizontalAlignment="Center" Width="62" Click="btnSave_Click" />
+    </Grid>
+</Window>

@@ -1,0 +1,24 @@
+﻿<Window x:Class="WPFFormEqualsSystem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFFormEqualsSystem"
+        mc:Ignorable="d"
+        Title="Уравнения"
+        WindowStartupLocation="CenterScreen" Width="115" Height="165">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Content="2x+cos(2x)" Margin="0,0,0,5" />
+        <Label Grid.Row="1" Content="3x+sin(3x)" Margin="0,0,0,5" />
+        <TextBox Grid.Row="2" x:Name="tbX" Margin="0,0,0,5" />
+        <Button Grid.Row="3" x:Name="btnCalc" Content="Вычислить" Margin="0,0,0,5" Click="btnCalc_Click" />
+    </Grid>
+</Window>

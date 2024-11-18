@@ -1,0 +1,34 @@
+﻿<Window x:Class="WPFSquare.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFSquare"
+        mc:Ignorable="d"
+        Title="Квадрат" Width="145" Height="145" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Label Grid.Column="0" Grid.Row="0" Content="Сторона" />
+        <TextBox Grid.Column="1" Grid.Row="0" x:Name="tbSide" Margin="0,2,0,0" ToolTip="Сторона" />
+
+        <Label Grid.Column="0" Grid.Row="1" Content="Периметр" />
+        <TextBox Grid.Column="1" Grid.Row="1" x:Name="tbPerimeter" Margin="0,2,0,0" ToolTip="Периметр" />
+
+        <Label Grid.Column="0" Grid.Row="2" Content="Площадь" />
+        <TextBox Grid.Column="1" Grid.Row="2" x:Name="tbSquare" Margin="0,2,0,0" ToolTip="Площадь" />
+
+        <Button Grid.Column="1" Grid.Row="3" x:Name="btnCalc" Content="Вычислить" Margin="0,2,0,0" ToolTip="Вычислить" />
+
+        
+    </Grid>
+</Window>
